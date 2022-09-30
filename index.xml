@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simulatune&#39;s Blog</title>
+    <link>https://simulatune.github.io/</link>
+    <description>Recent content on Simulatune&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 Sep 2022 15:00:00 +0800</lastBuildDate><atom:link href="https://simulatune.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于</title>
+      <link>https://simulatune.github.io/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://simulatune.github.io/about/</guid>
+      <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>https://simulatune.github.io/post/2022/09/hello/</link>
+      <pubDate>Fri, 30 Sep 2022 15:00:00 +0800</pubDate>
+      
+      <guid>https://simulatune.github.io/post/2022/09/hello/</guid>
+      <description>&lt;p&gt;Hello!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
