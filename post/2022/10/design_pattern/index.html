@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://simulatune.github.io/post/2022/10/design_pattern/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-10-07T20:22:00+08:00" />
-<meta property="article:modified_time" content="2022-10-07T22:43:46+08:00" />
+<meta property="article:modified_time" content="2022-10-07T23:39:06+08:00" />
 
 <meta itemprop="name" content="设计模式">
 <meta itemprop="description" content="23种设计模式"><meta itemprop="datePublished" content="2022-10-07T20:22:00+08:00" />
-<meta itemprop="dateModified" content="2022-10-07T22:43:46+08:00" />
-<meta itemprop="wordCount" content="329">
+<meta itemprop="dateModified" content="2022-10-07T23:39:06+08:00" />
+<meta itemprop="wordCount" content="1116">
 <meta itemprop="keywords" content="设计模式," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="设计模式"/>
 <meta name="twitter:description" content="23种设计模式"/>
@@ -125,15 +125,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">设计模式</h1>
+      <h1 class="post-title emphasized-title">设计模式</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2022-10-07 </span>
         <div class="post-category">
             <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"> 设计模式 </a>
             </div>
-          <span class="more-meta"> 约 329 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 1116 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
         
       </div>
     </header>
@@ -193,15 +193,7 @@
 </div>
     <div class="post-content">
       <h2 id="设计模式">设计模式</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="创建型模式">创建型模式</h3>
+<h3 id="创建型模式">创建型模式</h3>
 <h4 id="单例模式">单例模式</h4>
 <!--list-separator-->
 <ul>
@@ -254,24 +246,186 @@
 </ul>
 <h3 id="结构型模式">结构型模式</h3>
 <h4 id="代理模式">代理模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>为另一个对象提供一个替身或占位符以控制对这个对象的访问。</p>
+<figure><img src="/images/Design_Pattern/%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="适配器模式">适配器模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>将一个类的接口，转换成客户期望的另一个接口。适配器让原本接口不兼容的类可以合作无间。对象适配器使用组合，类适配器使用多重继承。</p>
+<figure><img src="/images/Design_Pattern/%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="组合模式">组合模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>允许你将对象组合成树形结构来表现&quot;整体/部分&quot;层次结构。组合能让客户以一致的方式处理个别对象以及对象组合。</p>
+<figure><img src="/images/Design_Pattern/%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="装饰者模式">装饰者模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>动态地将责任附加到对象上，若要扩展功能，装饰者提供了比继承更有弹性的替代方案。</p>
+<figure><img src="/images/Design_Pattern/%e8%a3%85%e9%a5%b0%e8%80%85%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="亨元模式">亨元模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>如想让某个类的一个实例能用来提供许多&quot;虚拟实例&quot;，就使用蝇量模式。</p>
+<figure><img src="/images/Design_Pattern/%e4%ba%a8%e5%85%83%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="外观模式">外观模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>提供了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。</p>
+<figure><img src="/images/Design_Pattern/%e5%a4%96%e8%a7%82%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="桥接模式">桥接模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>使用桥接模式通过将实现和抽象放在两个不同的类层次中而使它们可以独立改变。</p>
+<figure><img src="/images/Design_Pattern/%e6%a1%a5%e6%8e%a5%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h3 id="行为型模式">行为型模式</h3>
 <h4 id="策略模式">策略模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>定义了算法族，分别封闭起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户。</p>
+<figure><img src="/images/Design_Pattern/%e7%ad%96%e7%95%a5%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="状态模式">状态模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>允许对象在内部状态改变时改变它的行为，对象看起来好象改了它的类。</p>
+<figure><img src="/images/Design_Pattern/%e7%8a%b6%e6%80%81%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="责任链模式">责任链模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>通过责任链模式，你可以为某个请求创建一个对象链。每个对象依序检查此请求并对其进行处理或者将它传给链中的下一个对象。</p>
+<figure><img src="/images/Design_Pattern/%e8%b4%a3%e4%bb%bb%e9%93%be%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="解释器模式">解释器模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>使用解释器模式为语言创建解释器。</p>
+<figure><img src="/images/Design_Pattern/%e8%a7%a3%e9%87%8a%e5%99%a8%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="命令模式">命令模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>将&quot;请求&quot;封闭成对象，以便使用不同的请求，队列或者日志来参数化其他对象。命令模式也支持可撤销的操作。</p>
+<figure><img src="/images/Design_Pattern/%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="观察者模式">观察者模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>在对象之间定义一对多的依赖，这样一来，当一个对象改变状态，依赖它的对象都会收到通知，并自动更新。</p>
+<figure><img src="/images/Design_Pattern/%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="备忘录模式">备忘录模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>当你需要让对象返回之前的状态时(例如, 你的用户请求&quot;撤销&quot;)，你使用备忘录模式。</p>
+<figure><img src="/images/Design_Pattern/%e5%a4%87%e5%bf%98%e5%bd%95%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="迭代器模式">迭代器模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示。</p>
+<figure><img src="/images/Design_Pattern/%e8%bf%ad%e4%bb%a3%e5%99%a8%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="模板方法模式">模板方法模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>在一个方法中定义一个算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些步骤。</p>
+<figure><img src="/images/Design_Pattern/%e6%a8%a1%e6%9d%bf%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="访问者模式">访问者模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>当你想要为一个对象的组合增加新的能力，且封装并不重要时，就使用访问者模式。</p>
+<figure><img src="/images/Design_Pattern/%e8%ae%bf%e9%97%ae%e8%80%85%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h4 id="中介者模式">中介者模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>使用中介者模式来集中相关对象之间复杂的沟通和控制方式。</p>
+<figure><img src="/images/Design_Pattern/%e4%b8%ad%e4%bb%8b%e8%80%85%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
 <h2 id="参考链接">参考链接</h2>
 <ul>
 <li><a href="https://blog.csdn.net/u010144805/article/details/82414945">https://blog.csdn.net/u010144805/article/details/82414945</a></li>
