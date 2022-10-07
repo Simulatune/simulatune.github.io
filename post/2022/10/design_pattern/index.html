@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Simulatune" /><meta name="description" content="23种设计模式" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Simulatune" /><meta name="description" content="7大设计原则 & 23种设计模式" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="设计模式" />
-<meta property="og:description" content="23种设计模式" />
+<meta property="og:description" content="7大设计原则 &amp; 23种设计模式" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://simulatune.github.io/post/2022/10/design_pattern/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-10-07T20:22:00+08:00" />
-<meta property="article:modified_time" content="2022-10-07T23:39:06+08:00" />
+<meta property="article:modified_time" content="2022-10-07T23:48:54+08:00" />
 
 <meta itemprop="name" content="设计模式">
-<meta itemprop="description" content="23种设计模式"><meta itemprop="datePublished" content="2022-10-07T20:22:00+08:00" />
-<meta itemprop="dateModified" content="2022-10-07T23:39:06+08:00" />
-<meta itemprop="wordCount" content="1116">
+<meta itemprop="description" content="7大设计原则 &amp; 23种设计模式"><meta itemprop="datePublished" content="2022-10-07T20:22:00+08:00" />
+<meta itemprop="dateModified" content="2022-10-07T23:48:54+08:00" />
+<meta itemprop="wordCount" content="1489">
 <meta itemprop="keywords" content="设计模式," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="设计模式"/>
-<meta name="twitter:description" content="23种设计模式"/>
+<meta name="twitter:description" content="7大设计原则 &amp; 23种设计模式"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"> 设计模式 </a>
             </div>
-          <span class="more-meta"> 约 1116 字 </span>
+          <span class="more-meta"> 约 1489 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
         
       </div>
@@ -145,7 +145,8 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#设计模式">设计模式</a>
+        <li><a href="#7大设计原则">7大设计原则:</a></li>
+        <li><a href="#23种设计模式">23种设计模式:</a>
           <ul>
             <li><a href="#创建型模式">创建型模式</a>
               <ul>
@@ -192,7 +193,17 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="设计模式">设计模式</h2>
+      <h2 id="7大设计原则">7大设计原则:</h2>
+<ol>
+<li>单一职责原则【SINGLE RESPONSIBILITY PRINCIPLE】：一个类负责一项职责。</li>
+<li>里氏替换原则【LISKOV SUBSTITUTION PRINCIPLE】：继承与派生的规则。</li>
+<li>依赖倒置原则【DEPENDENCE INVERSION PRINCIPLE】：高层模块不应该依赖低层模块，二者都应该依赖其抽象；抽象不应该依赖细节；细节应该依赖抽象。即针对接口编程，不要针对实现编程。</li>
+<li>接口隔离原则【INTERFACE SEGREGATION PRINCIPLE】：建立单一接口，不要建立庞大臃肿的接口，尽量细化接口，接口中的方法尽量少。</li>
+<li>迪米特法则【LOW OF DEMETER】：高内聚，低耦合。</li>
+<li>开闭原则【OPEN CLOSE PRINCIPLE】：一个软件实体如类、模块和函数应该对扩展开放，对修改关闭。</li>
+<li>组合/聚合复用原则【Composition/Aggregation Reuse Principle(CARP) 】：尽量使用组合和聚合少使用继承的关系来达到复用的原则。</li>
+</ol>
+<h2 id="23种设计模式">23种设计模式:</h2>
 <h3 id="创建型模式">创建型模式</h3>
 <h4 id="单例模式">单例模式</h4>
 <!--list-separator-->
