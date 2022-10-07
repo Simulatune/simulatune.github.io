@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Simulatune" /><meta name="description" content="Hugo theme even example site." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Simulatune" /><meta name="description" content="Hugo site" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -37,19 +37,19 @@
 
 
 
-<link href="/sass/main.min.b874a8796a492f0d7c86bb24c33cbf052935783a5778ebaf819a8e514bf49f10.css" rel="stylesheet">
+<link href="/sass/main.min.2449a09f11166efb4e92a0d0821be1cd2c6e8c3ab75b17e6187696ee47df7774.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Simulatune&#39;s Blog" />
-<meta property="og:description" content="Hugo theme even example site." />
+<meta property="og:description" content="Hugo site" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://simulatune.github.io/" />
 
 <meta itemprop="name" content="Simulatune&#39;s Blog">
-<meta itemprop="description" content="Hugo theme even example site."><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Hugo site"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Simulatune&#39;s Blog"/>
-<meta name="twitter:description" content="Hugo theme even example site."/>
+<meta name="twitter:description" content="Hugo site"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -116,29 +116,39 @@
 
     </header>
 
+    
+        
+        
+        <a href="https://github.com/simulatune/simulatune.github.io" title="https://github.com/simulatune/simulatune.github.io" target="_blank">  
+        <img style="position: fixed; top: 0; right: 0; border: 0; z-index:9999;" 
+        src="/forkme_right_gray.png" 
+        alt="Fork me on GitHub">
+    </a>
+    
+
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/2022/09/hello/">Hello</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/2022/10/design_pattern/">设计模式</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-09-30 </span>
+      <span class="post-time"> 2022-10-07 </span>
       <div class="post-category">
-          <a href="/categories/%E7%B1%BB%E5%88%AB/"> 类别 </a>
+          <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"> 设计模式 </a>
           </div>
-        <span class="more-meta"> 约 1 字 </span>
+        <span class="more-meta"> 约 329 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      Hello!
+      设计模式 1 int i = 0; 创建型模式 单例模式 确保一个类只有一个实例，并提供全局访问点。 生成器模式 使用生成器模式封装一个产品的构造过程，并允许按步骤构
     </div>
     <div class="read-more">
-      <a href="/post/2022/09/hello/" class="read-more-link">阅读更多</a>
+      <a href="/post/2022/10/design_pattern/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -202,6 +212,40 @@
 
 
 
+
+<script>
+  function createCopyButton(highlightDiv) {
+    const div = document.createElement("div");
+    div.className = "copy-code";
+    div.innerText = "Copy";
+    div.addEventListener("click", () =>
+      copyCodeToClipboard(div, highlightDiv)
+    );
+    addCopyButtonToDom(div, highlightDiv);
+  }
+
+  async function copyCodeToClipboard(button, highlightDiv) {
+    const codeToCopy = highlightDiv.querySelector(":last-child > .chroma > code")
+      .innerText;
+    await navigator.clipboard.writeText(codeToCopy);
+    button.blur();
+    button.innerText = "Copied!";
+    setTimeout(() => button.innerText = "Copy", 2000);
+  }
+
+  function addCopyButtonToDom(button, highlightDiv) {
+    highlightDiv.insertBefore(button, highlightDiv.firstChild);
+    const wrapper = document.createElement("div");
+    wrapper.className = "highlight-wrapper";
+    highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+    wrapper.appendChild(highlightDiv);
+  }
+
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if(!isMobile){
+     document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
+  }
+</script>  
 
 </body>
 </html>

@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Simulatune" /><meta name="description" content="Hugo theme even example site." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Simulatune" /><meta name="description" content="Hugo site" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -37,19 +37,19 @@
 
 
 
-<link href="/sass/main.min.b874a8796a492f0d7c86bb24c33cbf052935783a5778ebaf819a8e514bf49f10.css" rel="stylesheet">
+<link href="/sass/main.min.2449a09f11166efb4e92a0d0821be1cd2c6e8c3ab75b17e6187696ee47df7774.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Categories" />
-<meta property="og:description" content="Hugo theme even example site." />
+<meta property="og:description" content="Hugo site" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://simulatune.github.io/categories/" />
 
 <meta itemprop="name" content="Categories">
-<meta itemprop="description" content="Hugo theme even example site."><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Hugo site"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content="Hugo theme even example site."/>
+<meta name="twitter:description" content="Hugo site"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -116,6 +116,16 @@
 
     </header>
 
+    
+        
+        
+        <a href="https://github.com/simulatune/simulatune.github.io" title="https://github.com/simulatune/simulatune.github.io" target="_blank">  
+        <img style="position: fixed; top: 0; right: 0; border: 0; z-index:9999;" 
+        src="/forkme_right_gray.png" 
+        alt="Fork me on GitHub">
+    </a>
+    
+
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
@@ -124,8 +134,8 @@
         共计 1 个分类
       </div>
       <div class="terms-tags">
-        <a class="terms-link" href="/categories/%E7%B1%BB%E5%88%AB/">
-            类别
+        <a class="terms-link" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+            设计模式
             <span class="terms-count">1</span>
           </a>
         </div>
@@ -183,6 +193,40 @@
 
 
 
+
+<script>
+  function createCopyButton(highlightDiv) {
+    const div = document.createElement("div");
+    div.className = "copy-code";
+    div.innerText = "Copy";
+    div.addEventListener("click", () =>
+      copyCodeToClipboard(div, highlightDiv)
+    );
+    addCopyButtonToDom(div, highlightDiv);
+  }
+
+  async function copyCodeToClipboard(button, highlightDiv) {
+    const codeToCopy = highlightDiv.querySelector(":last-child > .chroma > code")
+      .innerText;
+    await navigator.clipboard.writeText(codeToCopy);
+    button.blur();
+    button.innerText = "Copied!";
+    setTimeout(() => button.innerText = "Copy", 2000);
+  }
+
+  function addCopyButtonToDom(button, highlightDiv) {
+    highlightDiv.insertBefore(button, highlightDiv.firstChild);
+    const wrapper = document.createElement("div");
+    wrapper.className = "highlight-wrapper";
+    highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+    wrapper.appendChild(highlightDiv);
+  }
+
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if(!isMobile){
+     document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
+  }
+</script>  
 
 </body>
 </html>

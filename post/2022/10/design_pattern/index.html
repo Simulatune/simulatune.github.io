@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>设计模式 - Simulatune&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Simulatune" /><meta name="description" content="23种设计模式" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.104.1 with theme even" />
+
+
+<link rel="canonical" href="https://simulatune.github.io/post/2022/10/design_pattern/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2449a09f11166efb4e92a0d0821be1cd2c6e8c3ab75b17e6187696ee47df7774.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="设计模式" />
+<meta property="og:description" content="23种设计模式" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://simulatune.github.io/post/2022/10/design_pattern/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-10-07T20:22:00+08:00" />
+<meta property="article:modified_time" content="2022-10-07T22:43:46+08:00" />
+
+<meta itemprop="name" content="设计模式">
+<meta itemprop="description" content="23种设计模式"><meta itemprop="datePublished" content="2022-10-07T20:22:00+08:00" />
+<meta itemprop="dateModified" content="2022-10-07T22:43:46+08:00" />
+<meta itemprop="wordCount" content="329">
+<meta itemprop="keywords" content="设计模式," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="设计模式"/>
+<meta name="twitter:description" content="23种设计模式"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Simulatune</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Simulatune</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    
+        
+        
+        <a href="https://github.com/simulatune/simulatune.github.io" title="https://github.com/simulatune/simulatune.github.io" target="_blank">  
+        <img style="position: fixed; top: 0; right: 0; border: 0; z-index:9999;" 
+        src="/forkme_right_gray.png" 
+        alt="Fork me on GitHub">
+    </a>
+    
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">设计模式</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-10-07 </span>
+        <div class="post-category">
+            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"> 设计模式 </a>
+            </div>
+          <span class="more-meta"> 约 329 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#设计模式">设计模式</a>
+          <ul>
+            <li><a href="#创建型模式">创建型模式</a>
+              <ul>
+                <li><a href="#单例模式">单例模式</a></li>
+                <li><a href="#生成器模式">生成器模式</a></li>
+                <li><a href="#原型模式">原型模式</a></li>
+                <li><a href="#工厂方法模式">工厂方法模式</a></li>
+                <li><a href="#抽象工厂模式">抽象工厂模式</a></li>
+              </ul>
+            </li>
+            <li><a href="#结构型模式">结构型模式</a>
+              <ul>
+                <li><a href="#代理模式">代理模式</a></li>
+                <li><a href="#适配器模式">适配器模式</a></li>
+                <li><a href="#组合模式">组合模式</a></li>
+                <li><a href="#装饰者模式">装饰者模式</a></li>
+                <li><a href="#亨元模式">亨元模式</a></li>
+                <li><a href="#外观模式">外观模式</a></li>
+                <li><a href="#桥接模式">桥接模式</a></li>
+              </ul>
+            </li>
+            <li><a href="#行为型模式">行为型模式</a>
+              <ul>
+                <li><a href="#策略模式">策略模式</a></li>
+                <li><a href="#状态模式">状态模式</a></li>
+                <li><a href="#责任链模式">责任链模式</a></li>
+                <li><a href="#解释器模式">解释器模式</a></li>
+                <li><a href="#命令模式">命令模式</a></li>
+                <li><a href="#观察者模式">观察者模式</a></li>
+                <li><a href="#备忘录模式">备忘录模式</a></li>
+                <li><a href="#迭代器模式">迭代器模式</a></li>
+                <li><a href="#模板方法模式">模板方法模式</a></li>
+                <li><a href="#访问者模式">访问者模式</a></li>
+                <li><a href="#中介者模式">中介者模式</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#参考链接">参考链接</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="设计模式">设计模式</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="创建型模式">创建型模式</h3>
+<h4 id="单例模式">单例模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>确保一个类只有一个实例，并提供全局访问点。</p>
+<figure><img src="/images/Design_Pattern/%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
+<h4 id="生成器模式">生成器模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>使用生成器模式封装一个产品的构造过程，并允许按步骤构造。将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</p>
+<figure><img src="/images/Design_Pattern/%e7%94%9f%e6%88%90%e5%99%a8%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
+<h4 id="原型模式">原型模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>当创建给定类的实例过程很昂贵或很复杂时，就使用原型模式。</p>
+<figure><img src="/images/Design_Pattern/%e5%8e%9f%e5%9e%8b%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
+<h4 id="工厂方法模式">工厂方法模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。</p>
+<figure><img src="/images/Design_Pattern/%e5%b7%a5%e5%8e%82%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
+<h4 id="抽象工厂模式">抽象工厂模式</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>提供一个接口，用于创建相关或依赖对象的家族，而不需要指定具体类。</p>
+<figure><img src="/images/Design_Pattern/%e6%8a%bd%e8%b1%a1%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f.png"/>
+    </figure>
+
+</li>
+</ul>
+<h3 id="结构型模式">结构型模式</h3>
+<h4 id="代理模式">代理模式</h4>
+<h4 id="适配器模式">适配器模式</h4>
+<h4 id="组合模式">组合模式</h4>
+<h4 id="装饰者模式">装饰者模式</h4>
+<h4 id="亨元模式">亨元模式</h4>
+<h4 id="外观模式">外观模式</h4>
+<h4 id="桥接模式">桥接模式</h4>
+<h3 id="行为型模式">行为型模式</h3>
+<h4 id="策略模式">策略模式</h4>
+<h4 id="状态模式">状态模式</h4>
+<h4 id="责任链模式">责任链模式</h4>
+<h4 id="解释器模式">解释器模式</h4>
+<h4 id="命令模式">命令模式</h4>
+<h4 id="观察者模式">观察者模式</h4>
+<h4 id="备忘录模式">备忘录模式</h4>
+<h4 id="迭代器模式">迭代器模式</h4>
+<h4 id="模板方法模式">模板方法模式</h4>
+<h4 id="访问者模式">访问者模式</h4>
+<h4 id="中介者模式">中介者模式</h4>
+<h2 id="参考链接">参考链接</h2>
+<ul>
+<li><a href="https://blog.csdn.net/u010144805/article/details/82414945">https://blog.csdn.net/u010144805/article/details/82414945</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Simulatune</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-10-07
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+          </div>
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:simulatune@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/Simulatune" class="iconfont icon-github" title="github"></a>
+  <a href="https://simulatune.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Simulatune</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+<script>
+  function createCopyButton(highlightDiv) {
+    const div = document.createElement("div");
+    div.className = "copy-code";
+    div.innerText = "Copy";
+    div.addEventListener("click", () =>
+      copyCodeToClipboard(div, highlightDiv)
+    );
+    addCopyButtonToDom(div, highlightDiv);
+  }
+
+  async function copyCodeToClipboard(button, highlightDiv) {
+    const codeToCopy = highlightDiv.querySelector(":last-child > .chroma > code")
+      .innerText;
+    await navigator.clipboard.writeText(codeToCopy);
+    button.blur();
+    button.innerText = "Copied!";
+    setTimeout(() => button.innerText = "Copy", 2000);
+  }
+
+  function addCopyButtonToDom(button, highlightDiv) {
+    highlightDiv.insertBefore(button, highlightDiv.firstChild);
+    const wrapper = document.createElement("div");
+    wrapper.className = "highlight-wrapper";
+    highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+    wrapper.appendChild(highlightDiv);
+  }
+
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if(!isMobile){
+     document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
+  }
+</script>  
+
+</body>
+</html>

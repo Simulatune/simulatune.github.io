@@ -6,7 +6,7 @@
     <description>Recent content on Simulatune&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Sep 2022 15:00:00 +0800</lastBuildDate><atom:link href="https://simulatune.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Oct 2022 20:22:00 +0800</lastBuildDate><atom:link href="https://simulatune.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>https://simulatune.github.io/about/</link>
@@ -18,12 +18,95 @@
     </item>
     
     <item>
-      <title>Hello</title>
-      <link>https://simulatune.github.io/post/2022/09/hello/</link>
-      <pubDate>Fri, 30 Sep 2022 15:00:00 +0800</pubDate>
+      <title>设计模式</title>
+      <link>https://simulatune.github.io/post/2022/10/design_pattern/</link>
+      <pubDate>Fri, 07 Oct 2022 20:22:00 +0800</pubDate>
       
-      <guid>https://simulatune.github.io/post/2022/09/hello/</guid>
-      <description>&lt;p&gt;Hello!&lt;/p&gt;
+      <guid>https://simulatune.github.io/post/2022/10/design_pattern/</guid>
+      <description>&lt;h2 id=&#34;设计模式&#34;&gt;设计模式&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;创建型模式&#34;&gt;创建型模式&lt;/h3&gt;
+&lt;h4 id=&#34;单例模式&#34;&gt;单例模式&lt;/h4&gt;
+&lt;!--list-separator--&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;确保一个类只有一个实例，并提供全局访问点。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://simulatune.github.io/images/Design_Pattern/%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f.png&#34;/&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;生成器模式&#34;&gt;生成器模式&lt;/h4&gt;
+&lt;!--list-separator--&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;使用生成器模式封装一个产品的构造过程，并允许按步骤构造。将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://simulatune.github.io/images/Design_Pattern/%e7%94%9f%e6%88%90%e5%99%a8%e6%a8%a1%e5%bc%8f.png&#34;/&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;原型模式&#34;&gt;原型模式&lt;/h4&gt;
+&lt;!--list-separator--&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;当创建给定类的实例过程很昂贵或很复杂时，就使用原型模式。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://simulatune.github.io/images/Design_Pattern/%e5%8e%9f%e5%9e%8b%e6%a8%a1%e5%bc%8f.png&#34;/&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;工厂方法模式&#34;&gt;工厂方法模式&lt;/h4&gt;
+&lt;!--list-separator--&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://simulatune.github.io/images/Design_Pattern/%e5%b7%a5%e5%8e%82%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f.png&#34;/&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;抽象工厂模式&#34;&gt;抽象工厂模式&lt;/h4&gt;
+&lt;!--list-separator--&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;提供一个接口，用于创建相关或依赖对象的家族，而不需要指定具体类。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://simulatune.github.io/images/Design_Pattern/%e6%8a%bd%e8%b1%a1%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f.png&#34;/&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;结构型模式&#34;&gt;结构型模式&lt;/h3&gt;
+&lt;h4 id=&#34;代理模式&#34;&gt;代理模式&lt;/h4&gt;
+&lt;h4 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h4&gt;
+&lt;h4 id=&#34;组合模式&#34;&gt;组合模式&lt;/h4&gt;
+&lt;h4 id=&#34;装饰者模式&#34;&gt;装饰者模式&lt;/h4&gt;
+&lt;h4 id=&#34;亨元模式&#34;&gt;亨元模式&lt;/h4&gt;
+&lt;h4 id=&#34;外观模式&#34;&gt;外观模式&lt;/h4&gt;
+&lt;h4 id=&#34;桥接模式&#34;&gt;桥接模式&lt;/h4&gt;
+&lt;h3 id=&#34;行为型模式&#34;&gt;行为型模式&lt;/h3&gt;
+&lt;h4 id=&#34;策略模式&#34;&gt;策略模式&lt;/h4&gt;
+&lt;h4 id=&#34;状态模式&#34;&gt;状态模式&lt;/h4&gt;
+&lt;h4 id=&#34;责任链模式&#34;&gt;责任链模式&lt;/h4&gt;
+&lt;h4 id=&#34;解释器模式&#34;&gt;解释器模式&lt;/h4&gt;
+&lt;h4 id=&#34;命令模式&#34;&gt;命令模式&lt;/h4&gt;
+&lt;h4 id=&#34;观察者模式&#34;&gt;观察者模式&lt;/h4&gt;
+&lt;h4 id=&#34;备忘录模式&#34;&gt;备忘录模式&lt;/h4&gt;
+&lt;h4 id=&#34;迭代器模式&#34;&gt;迭代器模式&lt;/h4&gt;
+&lt;h4 id=&#34;模板方法模式&#34;&gt;模板方法模式&lt;/h4&gt;
+&lt;h4 id=&#34;访问者模式&#34;&gt;访问者模式&lt;/h4&gt;
+&lt;h4 id=&#34;中介者模式&#34;&gt;中介者模式&lt;/h4&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/u010144805/article/details/82414945&#34;&gt;https://blog.csdn.net/u010144805/article/details/82414945&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
