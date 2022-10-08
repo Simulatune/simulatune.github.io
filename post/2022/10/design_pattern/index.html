@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>设计模式 - Simulatune&#39;s Blog</title>
+  <title>Design Patterns - Simulatune&#39;s Web Page</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Simulatune" /><meta name="description" content="7大设计原则 & 23种设计模式" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Simulatune" /><meta name="description" content="Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
+Singleton Ensure a class has only one instance, and provide a global point of access to it.
+Eager Instantiation
+1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -39,20 +42,29 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="设计模式" />
-<meta property="og:description" content="7大设计原则 &amp; 23种设计模式" />
+<meta property="og:title" content="Design Patterns" />
+<meta property="og:description" content="Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
+Singleton Ensure a class has only one instance, and provide a global point of access to it.
+Eager Instantiation
+1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://simulatune.github.io/post/2022/10/design_pattern/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-10-07T20:22:00+08:00" />
-<meta property="article:modified_time" content="2022-10-08T08:38:38+08:00" />
+<meta property="article:modified_time" content="2022-10-08T17:46:25+08:00" />
 
-<meta itemprop="name" content="设计模式">
-<meta itemprop="description" content="7大设计原则 &amp; 23种设计模式"><meta itemprop="datePublished" content="2022-10-07T20:22:00+08:00" />
-<meta itemprop="dateModified" content="2022-10-08T08:38:38+08:00" />
-<meta itemprop="wordCount" content="1484">
-<meta itemprop="keywords" content="设计模式," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="设计模式"/>
-<meta name="twitter:description" content="7大设计原则 &amp; 23种设计模式"/>
+<meta itemprop="name" content="Design Patterns">
+<meta itemprop="description" content="Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
+Singleton Ensure a class has only one instance, and provide a global point of access to it.
+Eager Instantiation
+1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class."><meta itemprop="datePublished" content="2022-10-07T20:22:00+08:00" />
+<meta itemprop="dateModified" content="2022-10-08T17:46:25+08:00" />
+<meta itemprop="wordCount" content="363">
+<meta itemprop="keywords" content="Design_Patterns," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Design Patterns"/>
+<meta name="twitter:description" content="Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
+Singleton Ensure a class has only one instance, and provide a global point of access to it.
+Eager Instantiation
+1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -78,13 +90,13 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">主页</li>
+        <li class="mobile-menu-item">home</li>
       </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
+        <li class="mobile-menu-item">archives</li>
       </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
+        <li class="mobile-menu-item">tags</li>
       </a><a href="/about/">
-        <li class="mobile-menu-item">关于</li>
+        <li class="mobile-menu-item">About</li>
       </a>
   </ul>
 
@@ -106,13 +118,13 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/">home</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
+        <a class="menu-item-link" href="/post/">archives</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
+        <a class="menu-item-link" href="/tags/">tags</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">关于</a>
+        <a class="menu-item-link" href="/about/">About</a>
       </li>
   </ul>
 </nav>
@@ -125,62 +137,41 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title emphasized-title">设计模式</h1>
+      <h1 class="post-title emphasized-title">Design Patterns</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2022-10-07 </span>
         <div class="post-category">
-            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"> 设计模式 </a>
+            <a href="/categories/design_patterns/"> Design_Patterns </a>
             </div>
-          <span class="more-meta"> 约 1484 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
+          <span class="more-meta"> 363 words </span>
+          <span class="more-meta"> 2 mins read </span>
         
       </div>
     </header>
 
     <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
+  <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
     <li>
       <ul>
-        <li><a href="#7大设计原则">7大设计原则:</a></li>
-        <li><a href="#23种设计模式">23种设计模式:</a>
+        <li><a href="#design-patterns">Design Patterns</a>
           <ul>
-            <li><a href="#创建型模式">创建型模式</a>
+            <li><a href="#creational-patterns">Creational patterns</a>
               <ul>
-                <li><a href="#单例模式">单例模式</a></li>
-                <li><a href="#生成器模式">生成器模式</a></li>
-                <li><a href="#原型模式">原型模式</a></li>
-                <li><a href="#工厂方法模式">工厂方法模式</a></li>
-                <li><a href="#抽象工厂模式">抽象工厂模式</a></li>
+                <li><a href="#singleton">Singleton</a></li>
               </ul>
             </li>
-            <li><a href="#结构型模式">结构型模式</a>
+            <li><a href="#structural-patterns">Structural patterns</a>
               <ul>
-                <li><a href="#代理模式">代理模式</a></li>
-                <li><a href="#适配器模式">适配器模式</a></li>
-                <li><a href="#组合模式">组合模式</a></li>
-                <li><a href="#装饰者模式">装饰者模式</a></li>
-                <li><a href="#亨元模式">亨元模式</a></li>
-                <li><a href="#外观模式">外观模式</a></li>
-                <li><a href="#桥接模式">桥接模式</a></li>
+                <li><a href="#decorator">Decorator</a></li>
               </ul>
             </li>
-            <li><a href="#行为型模式">行为型模式</a>
+            <li><a href="#behavioral-patterns">Behavioral patterns</a>
               <ul>
-                <li><a href="#策略模式">策略模式</a></li>
-                <li><a href="#状态模式">状态模式</a></li>
-                <li><a href="#责任链模式">责任链模式</a></li>
-                <li><a href="#解释器模式">解释器模式</a></li>
-                <li><a href="#命令模式">命令模式</a></li>
-                <li><a href="#观察者模式">观察者模式</a></li>
-                <li><a href="#备忘录模式">备忘录模式</a></li>
-                <li><a href="#迭代器模式">迭代器模式</a></li>
-                <li><a href="#模板方法模式">模板方法模式</a></li>
-                <li><a href="#访问者模式">访问者模式</a></li>
-                <li><a href="#中介者模式">中介者模式</a></li>
+                <li><a href="#command">Command</a></li>
               </ul>
             </li>
           </ul>
@@ -192,260 +183,162 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="7大设计原则">7大设计原则:</h2>
-<ol>
-<li>单一职责原则【SINGLE RESPONSIBILITY PRINCIPLE】：一个类负责一项职责。</li>
-<li>里氏替换原则【LISKOV SUBSTITUTION PRINCIPLE】：继承与派生的规则。</li>
-<li>依赖倒置原则【DEPENDENCE INVERSION PRINCIPLE】：高层模块不应该依赖低层模块，二者都应该依赖其抽象；抽象不应该依赖细节；细节应该依赖抽象。即针对接口编程，不要针对实现编程。</li>
-<li>接口隔离原则【INTERFACE SEGREGATION PRINCIPLE】：建立单一接口，不要建立庞大臃肿的接口，尽量细化接口，接口中的方法尽量少。</li>
-<li>迪米特法则【LOW OF DEMETER】：高内聚，低耦合。</li>
-<li>开闭原则【OPEN CLOSE PRINCIPLE】：一个软件实体如类、模块和函数应该对扩展开放，对修改关闭。</li>
-<li>组合/聚合复用原则【Composition/Aggregation Reuse Principle(CARP) 】：尽量使用组合和聚合少使用继承的关系来达到复用的原则。</li>
-</ol>
-<h2 id="23种设计模式">23种设计模式:</h2>
-<h3 id="创建型模式">创建型模式</h3>
-<h4 id="单例模式">单例模式</h4>
+      <h2 id="design-patterns">Design Patterns</h2>
+<h3 id="creational-patterns">Creational patterns</h3>
+<p>Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.</p>
+<h4 id="singleton">Singleton</h4>
+<p>Ensure a class has only one instance, and provide a global point of access to it.</p>
+<figure><img src="/images/Design_Pattern/Singleton.png"/>
+</figure>
+
 <!--list-separator-->
 <ul>
 <li>
-<p>确保一个类只有一个实例，并提供全局访问点。</p>
-<figure><img src="/images/Design_Pattern/%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
+<p>Eager Instantiation</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">EagerSingleton</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// create an instance of the class.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">EagerSingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EagerSingleton</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="nf">EagerSingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// get the only instance of the object created.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">EagerSingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
-<h4 id="生成器模式">生成器模式</h4>
 <!--list-separator-->
 <ul>
 <li>
-<p>使用生成器模式封装一个产品的构造过程，并允许按步骤构造。将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</p>
-<figure><img src="/images/Design_Pattern/%e7%94%9f%e6%88%90%e5%99%a8%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
+<p>Lazy Instantiation</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LazySingleton</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// initialize the instance as null.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">LazySingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="nf">LazySingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// check if the instance is null, and if so, create the object.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">LazySingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">	    <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LazySingleton</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
-<h4 id="原型模式">原型模式</h4>
 <!--list-separator-->
 <ul>
 <li>
-<p>当创建给定类的实例过程很昂贵或很复杂时，就使用原型模式。</p>
-<figure><img src="/images/Design_Pattern/%e5%8e%9f%e5%9e%8b%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
+<p>Thread-safe Instantiation</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ThreadSafeSingleton</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// initialize the instance as null.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">ThreadSafeSingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="nf">ThreadSafeSingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// check if the instance is null, within a synchronized block. If so, create the object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">ThreadSafeSingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">synchronized</span> <span class="o">(</span><span class="n">ThreadSafeSingleton</span><span class="o">.</span><span class="na">class</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">	    <span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadSafeSingleton</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">	    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
-<h4 id="工厂方法模式">工厂方法模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。</p>
-<figure><img src="/images/Design_Pattern/%e5%b7%a5%e5%8e%82%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
+<h3 id="structural-patterns">Structural patterns</h3>
+<p>Structural patterns are about organizing different classes and objects to form larger structures and provide new functionality.</p>
+<h4 id="decorator">Decorator</h4>
+<p>Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.</p>
+<figure><img src="/images/Design_Pattern/Decorator.png"/>
+</figure>
 
-</li>
-</ul>
-<h4 id="抽象工厂模式">抽象工厂模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>提供一个接口，用于创建相关或依赖对象的家族，而不需要指定具体类。</p>
-<figure><img src="/images/Design_Pattern/%e6%8a%bd%e8%b1%a1%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
+<h3 id="behavioral-patterns">Behavioral patterns</h3>
+<p>Behavioral patterns are about identifying common communication patterns between objects and realizing these patterns.</p>
+<h4 id="command">Command</h4>
+<p>Encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests. It also allows for the support of undoable operations.</p>
+<figure><img src="/images/Design_Pattern/Command.png"/>
+</figure>
 
-</li>
-</ul>
-<h3 id="结构型模式">结构型模式</h3>
-<h4 id="代理模式">代理模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>为另一个对象提供一个替身或占位符以控制对这个对象的访问。</p>
-<figure><img src="/images/Design_Pattern/%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="适配器模式">适配器模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>将一个类的接口，转换成客户期望的另一个接口。适配器让原本接口不兼容的类可以合作无间。对象适配器使用组合，类适配器使用多重继承。</p>
-<figure><img src="/images/Design_Pattern/%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="组合模式">组合模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>允许你将对象组合成树形结构来表现&quot;整体/部分&quot;层次结构。组合能让客户以一致的方式处理个别对象以及对象组合。</p>
-<figure><img src="/images/Design_Pattern/%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="装饰者模式">装饰者模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>动态地将责任附加到对象上，若要扩展功能，装饰者提供了比继承更有弹性的替代方案。</p>
-<figure><img src="/images/Design_Pattern/%e8%a3%85%e9%a5%b0%e8%80%85%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="亨元模式">亨元模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>如想让某个类的一个实例能用来提供许多&quot;虚拟实例&quot;，就使用蝇量模式。</p>
-<figure><img src="/images/Design_Pattern/%e4%ba%a8%e5%85%83%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="外观模式">外观模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>提供了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。</p>
-<figure><img src="/images/Design_Pattern/%e5%a4%96%e8%a7%82%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="桥接模式">桥接模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>使用桥接模式通过将实现和抽象放在两个不同的类层次中而使它们可以独立改变。</p>
-<figure><img src="/images/Design_Pattern/%e6%a1%a5%e6%8e%a5%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h3 id="行为型模式">行为型模式</h3>
-<h4 id="策略模式">策略模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>定义了算法族，分别封闭起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户。</p>
-<figure><img src="/images/Design_Pattern/%e7%ad%96%e7%95%a5%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="状态模式">状态模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>允许对象在内部状态改变时改变它的行为，对象看起来好象改了它的类。</p>
-<figure><img src="/images/Design_Pattern/%e7%8a%b6%e6%80%81%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="责任链模式">责任链模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>通过责任链模式，你可以为某个请求创建一个对象链。每个对象依序检查此请求并对其进行处理或者将它传给链中的下一个对象。</p>
-<figure><img src="/images/Design_Pattern/%e8%b4%a3%e4%bb%bb%e9%93%be%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="解释器模式">解释器模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>使用解释器模式为语言创建解释器。</p>
-<figure><img src="/images/Design_Pattern/%e8%a7%a3%e9%87%8a%e5%99%a8%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="命令模式">命令模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>将&quot;请求&quot;封闭成对象，以便使用不同的请求，队列或者日志来参数化其他对象。命令模式也支持可撤销的操作。</p>
-<figure><img src="/images/Design_Pattern/%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="观察者模式">观察者模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>在对象之间定义一对多的依赖，这样一来，当一个对象改变状态，依赖它的对象都会收到通知，并自动更新。</p>
-<figure><img src="/images/Design_Pattern/%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="备忘录模式">备忘录模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>当你需要让对象返回之前的状态时(例如, 你的用户请求&quot;撤销&quot;)，你使用备忘录模式。</p>
-<figure><img src="/images/Design_Pattern/%e5%a4%87%e5%bf%98%e5%bd%95%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="迭代器模式">迭代器模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示。</p>
-<figure><img src="/images/Design_Pattern/%e8%bf%ad%e4%bb%a3%e5%99%a8%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="模板方法模式">模板方法模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>在一个方法中定义一个算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些步骤。</p>
-<figure><img src="/images/Design_Pattern/%e6%a8%a1%e6%9d%bf%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="访问者模式">访问者模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>当你想要为一个对象的组合增加新的能力，且封装并不重要时，就使用访问者模式。</p>
-<figure><img src="/images/Design_Pattern/%e8%ae%bf%e9%97%ae%e8%80%85%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
-<h4 id="中介者模式">中介者模式</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>使用中介者模式来集中相关对象之间复杂的沟通和控制方式。</p>
-<figure><img src="/images/Design_Pattern/%e4%b8%ad%e4%bb%8b%e8%80%85%e6%a8%a1%e5%bc%8f.png"/>
-    </figure>
-
-</li>
-</ul>
 
     </div>
 
     <div class="post-copyright">
   <p class="copyright-item">
-    <span class="item-title">文章作者</span>
+    <span class="item-title">Author</span>
     <span class="item-content">Simulatune</span>
   </p>
   <p class="copyright-item">
-    <span class="item-title">上次更新</span>
+    <span class="item-title">LastMod</span>
     <span class="item-content">
         2022-10-08
         
@@ -453,13 +346,13 @@
   </p>
   
   <p class="copyright-item">
-    <span class="item-title">许可协议</span>
+    <span class="item-title">License</span>
     <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
   </p>
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+          <a href="/tags/design_patterns/">Design_Patterns</a>
           </div>
       <nav class="post-nav">
         
@@ -486,11 +379,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    主题 - 
+    Theme - 
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
@@ -498,7 +391,7 @@
 
   <span class="copyright-year">
     &copy; 
-    2017 - 
+    2021 - 
     2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Simulatune</span>
   </span>
 </div>
