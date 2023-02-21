@@ -6,7 +6,11 @@
     <description>Recent content in Design_Patterns on Simulatune&#39;s Web Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Oct 2022 20:22:00 +0800</lastBuildDate><atom:link href="https://simulatune.github.io/categories/design_patterns/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Oct 2022 20:22:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://simulatune.github.io/categories/design_patterns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Design Patterns</title>
       <link>https://simulatune.github.io/post/2022/10/design_pattern/</link>
@@ -15,8 +19,7 @@
       <guid>https://simulatune.github.io/post/2022/10/design_pattern/</guid>
       <description>Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
 Singleton Ensure a class has only one instance, and provide a global point of access to it.
-Eager Instantiation
-1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class.</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13  @startuml skinparam dpi 500 skinparam defaultFontName PT Mono class Singleton { - Singleton() + static getInstance():Singleton } Singleton &amp;lt;.</description>
     </item>
     
   </channel>

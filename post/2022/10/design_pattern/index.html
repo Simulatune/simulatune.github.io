@@ -18,15 +18,14 @@
 
 <meta name="author" content="Simulatune" /><meta name="description" content="Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
 Singleton Ensure a class has only one instance, and provide a global point of access to it.
-Eager Instantiation
-1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class." /><meta name="keywords" content="Hugo, theme, even" />
+1 2 3 4 5 6 7 8 9 10 11 12 13  @startuml skinparam dpi 500 skinparam defaultFontName PT Mono class Singleton { - Singleton() &#43; static getInstance():Singleton } Singleton &amp;lt;." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.104.1 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://simulatune.github.io/post/2022/10/design_pattern/" />
@@ -38,33 +37,33 @@ Eager Instantiation
 
 
 
-<link href="/sass/main.min.2449a09f11166efb4e92a0d0821be1cd2c6e8c3ab75b17e6187696ee47df7774.css" rel="stylesheet">
+<link href="/sass/main.min.aa71b89f7f6d602b978dbec7742d39d0d70e9c9b542c4b87ba850bcf4dfe0baa.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Design Patterns" />
 <meta property="og:description" content="Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
 Singleton Ensure a class has only one instance, and provide a global point of access to it.
-Eager Instantiation
-1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class." />
+1 2 3 4 5 6 7 8 9 10 11 12 13  @startuml skinparam dpi 500 skinparam defaultFontName PT Mono class Singleton { - Singleton() &#43; static getInstance():Singleton } Singleton &lt;." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://simulatune.github.io/post/2022/10/design_pattern/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://simulatune.github.io/post/2022/10/design_pattern/" />
 <meta property="article:published_time" content="2022-10-07T20:22:00+08:00" />
-<meta property="article:modified_time" content="2022-10-08T17:46:25+08:00" />
-
+<meta property="article:modified_time" content="2023-02-21T13:27:33+08:00" />
 <meta itemprop="name" content="Design Patterns">
 <meta itemprop="description" content="Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
 Singleton Ensure a class has only one instance, and provide a global point of access to it.
-Eager Instantiation
-1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class."><meta itemprop="datePublished" content="2022-10-07T20:22:00+08:00" />
-<meta itemprop="dateModified" content="2022-10-08T17:46:25+08:00" />
-<meta itemprop="wordCount" content="363">
+1 2 3 4 5 6 7 8 9 10 11 12 13  @startuml skinparam dpi 500 skinparam defaultFontName PT Mono class Singleton { - Singleton() &#43; static getInstance():Singleton } Singleton &lt;.">
+<meta itemprop="datePublished" content="2022-10-07T20:22:00&#43;08:00" />
+<meta itemprop="dateModified" content="2023-02-21T13:27:33&#43;08:00" />
+<meta itemprop="wordCount" content="596">
+
+
+
 <meta itemprop="keywords" content="Design_Patterns," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Design Patterns"/>
 <meta name="twitter:description" content="Design Patterns Creational patterns Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.
 Singleton Ensure a class has only one instance, and provide a global point of access to it.
-Eager Instantiation
-1 2 3 4 5 6 7 8 9 10 11 12 public class EagerSingleton { // create an instance of the class. private static EagerSingleton instance = new EagerSingleton(); // private constructor, so it cannot be instantiated outside this class."/>
+1 2 3 4 5 6 7 8 9 10 11 12 13  @startuml skinparam dpi 500 skinparam defaultFontName PT Mono class Singleton { - Singleton() &#43; static getInstance():Singleton } Singleton &lt;."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -144,8 +143,8 @@ Eager Instantiation
         <div class="post-category">
             <a href="/categories/design_patterns/"> Design_Patterns </a>
             </div>
-          <span class="more-meta"> 363 words </span>
-          <span class="more-meta"> 2 mins read </span>
+          <span class="more-meta"> 596 words </span>
+          <span class="more-meta"> 3 mins read </span>
         
       </div>
     </header>
@@ -188,16 +187,45 @@ Eager Instantiation
 <p>Creational patterns provide the capability to create objects based on a required criterion and in a controlled way.</p>
 <h4 id="singleton">Singleton</h4>
 <p>Ensure a class has only one instance, and provide a global point of access to it.</p>
-<figure><img src="/images/Design_Pattern/Singleton.png"/>
-</figure>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">@startuml
+skinparam dpi 500
+skinparam defaultFontName PT Mono
 
-<!--list-separator-->
+class Singleton
+{
+	- Singleton()
+	+ static getInstance():Singleton
+}
+
+Singleton &lt;.. Client
+
+@enduml
+</code></pre></td></tr></table>
+</div>
+</div><!--list-separator-->
 <ul>
 <li>
 <p>Eager Instantiation</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -211,19 +239,19 @@ Eager Instantiation
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">EagerSingleton</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// create an instance of the class.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">EagerSingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EagerSingleton</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="nf">EagerSingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// get the only instance of the object created.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">EagerSingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">EagerSingleton</span> <span class="o">{</span>
+    <span class="c1">// create an instance of the class.
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">EagerSingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EagerSingleton</span><span class="o">();</span>
+
+    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="nf">EagerSingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
+
+    <span class="c1">// get the only instance of the object created.
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">EagerSingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -233,7 +261,7 @@ Eager Instantiation
 <p>Lazy Instantiation</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -250,22 +278,22 @@ Eager Instantiation
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LazySingleton</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// initialize the instance as null.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">LazySingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="nf">LazySingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// check if the instance is null, and if so, create the object.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">LazySingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">	    <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LazySingleton</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">	<span class="o">}</span>
-</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LazySingleton</span> <span class="o">{</span>
+    <span class="c1">// initialize the instance as null.
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">LazySingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+
+    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="nf">LazySingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
+
+    <span class="c1">// check if the instance is null, and if so, create the object.
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">LazySingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LazySingleton</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -275,7 +303,7 @@ Eager Instantiation
 <p>Thread-safe Instantiation</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -294,24 +322,24 @@ Eager Instantiation
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ThreadSafeSingleton</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// initialize the instance as null.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">ThreadSafeSingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="nf">ThreadSafeSingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// check if the instance is null, within a synchronized block. If so, create the object
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">ThreadSafeSingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">synchronized</span> <span class="o">(</span><span class="n">ThreadSafeSingleton</span><span class="o">.</span><span class="na">class</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">	    <span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">		<span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadSafeSingleton</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">	    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">	<span class="o">}</span>
-</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ThreadSafeSingleton</span> <span class="o">{</span>
+    <span class="c1">// initialize the instance as null.
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="n">ThreadSafeSingleton</span> <span class="n">instance</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+
+    <span class="c1">// private constructor, so it cannot be instantiated outside this class.
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="nf">ThreadSafeSingleton</span><span class="o">()</span> <span class="o">{</span>  <span class="o">}</span>
+
+    <span class="c1">// check if the instance is null, within a synchronized block. If so, create the object
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="kd">static</span> <span class="n">ThreadSafeSingleton</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kd">synchronized</span> <span class="o">(</span><span class="n">ThreadSafeSingleton</span><span class="o">.</span><span class="na">class</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadSafeSingleton</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -319,17 +347,183 @@ Eager Instantiation
 <p>Structural patterns are about organizing different classes and objects to form larger structures and provide new functionality.</p>
 <h4 id="decorator">Decorator</h4>
 <p>Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.</p>
-<figure><img src="/images/Design_Pattern/Decorator.png"/>
-</figure>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">@startuml
+skinparam dpi 500
+skinparam defaultFontName PT Mono
 
-<h3 id="behavioral-patterns">Behavioral patterns</h3>
+abstract class Component
+{
+	+ operate():void
+}
+
+class ConcreteComponent
+{
+	+ operate():void
+}
+
+abstract class Decorator
+{
+	- component:Component
+	+ Decorator(Component)
+	+ operate():void
+}
+
+class ConreteDecoratorA
+{
+	+ ConreteDecoratorA(Component)
+	+ operate():void
+	+ operateA():void
+	+ operateB():void
+}
+
+class ConreteDecoratorB
+{
+	+ ConreteDecoratorB(Component)
+	+ operate():void
+	+ operateA():void
+	+ operateB():void
+}
+
+Component &lt;|-- ConcreteComponent
+Component &lt;|-- Decorator
+Component &lt;--o Decorator
+ConreteDecoratorA --|&gt; Decorator
+ConreteDecoratorB --|&gt; Decorator
+
+@enduml
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="behavioral-patterns">Behavioral patterns</h3>
 <p>Behavioral patterns are about identifying common communication patterns between objects and realizing these patterns.</p>
 <h4 id="command">Command</h4>
 <p>Encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests. It also allows for the support of undoable operations.</p>
-<figure><img src="/images/Design_Pattern/Command.png"/>
-</figure>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">@startuml
+skinparam dpi 500
+skinparam defaultFontName PT Mono
 
+class Invoker
+{
+	-comand:Comand
+	+Invoker(Comand)
+	+action():void
+}
 
+class Receiver
+{
+	-comand:Comand
+	+action():void
+}
+
+class Comand&lt;&lt; (I,#FF7700) interface&gt;&gt;
+{
+	+execute():void
+}
+
+class ConcreteComand
+{
+	-receiver:Receiver
+	+ConcreteComand(Comand)
+	+execute():void
+}
+
+Client..&gt;Invoker
+Client..&gt;Receiver
+Invoker o--&gt; Comand
+Receiver &lt;-- ConcreteComand
+Comand &lt;|.. ConcreteComand
+
+@enduml
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -340,7 +534,7 @@ Eager Instantiation
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-10-08
+        2023-02-21
         
     </span>
   </p>
@@ -392,7 +586,7 @@ Eager Instantiation
   <span class="copyright-year">
     &copy; 
     2021 - 
-    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Simulatune</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Simulatune</span>
   </span>
 </div>
 
@@ -409,7 +603,7 @@ Eager Instantiation
 
 
 
-<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
 
 
 
