@@ -9,43 +9,50 @@
   </url>
   
   <url>
+    <loc>https://simulatune.github.io/post/</loc>
+    <lastmod>2023-02-26T20:18:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://simulatune.github.io/post/2023/02/nice/</loc>
+    <lastmod>2023-02-26T20:18:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://simulatune.github.io/categories/</loc>
-    <lastmod>2023-02-21T13:27:33+08:00</lastmod>
+    <lastmod>2023-02-26T20:16:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://simulatune.github.io/post/2022/10/design_pattern/</loc>
-    <lastmod>2023-02-21T13:27:33+08:00</lastmod>
+    <lastmod>2023-02-26T20:16:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://simulatune.github.io/tags/design_patterns/</loc>
-    <lastmod>2023-02-21T13:27:33+08:00</lastmod>
+    <lastmod>2023-02-26T20:16:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://simulatune.github.io/categories/design_patterns/</loc>
-    <lastmod>2023-02-21T13:27:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://simulatune.github.io/post/</loc>
-    <lastmod>2023-02-21T13:27:33+08:00</lastmod>
+    <lastmod>2023-02-26T20:16:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://simulatune.github.io/tags/</loc>
-    <lastmod>2023-02-21T13:27:33+08:00</lastmod>
+    <lastmod>2023-02-26T20:16:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
